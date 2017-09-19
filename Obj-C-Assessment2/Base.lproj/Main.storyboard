@@ -114,6 +114,7 @@
                     <navigationItem key="navigationItem" id="UhB-a4-GyY"/>
                     <connections>
                         <outlet property="tableView" destination="Dmz-Ty-2Lq" id="yI2-Cd-cri"/>
+                        <segue destination="E5T-Gl-1ze" kind="show" id="X48-yx-nbS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f78-J9-83Z" sceneMemberID="firstResponder"/>
@@ -179,7 +180,6 @@
                             <constraint firstItem="wUd-A9-EOm" firstAttribute="top" secondItem="l9b-Nw-XuX" secondAttribute="bottom" constant="20" id="0lC-W8-evT"/>
                             <constraint firstItem="VDZ-lG-r06" firstAttribute="leading" secondItem="PyK-G6-GD4" secondAttribute="leadingMargin" constant="30" id="2kx-gh-ufN"/>
                             <constraint firstItem="VDZ-lG-r06" firstAttribute="centerY" secondItem="PyK-G6-GD4" secondAttribute="centerY" id="D68-cN-3Nl"/>
-                            <constraint firstItem="cpf-9f-T06" firstAttribute="top" secondItem="qcK-BR-Bj0" secondAttribute="bottom" constant="10" id="DeX-6Y-kah"/>
                             <constraint firstItem="qcK-BR-Bj0" firstAttribute="top" secondItem="mlz-uy-yhD" secondAttribute="bottom" constant="20" id="Fy7-et-RX4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qcK-BR-Bj0" secondAttribute="trailing" constant="30" id="Ln1-3j-L3V"/>
                             <constraint firstItem="VDZ-lG-r06" firstAttribute="centerX" secondItem="PyK-G6-GD4" secondAttribute="centerX" id="MYD-1k-nTG"/>
@@ -228,7 +228,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiG-Yc-PB7">
-                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="NEq-Et-lxo">

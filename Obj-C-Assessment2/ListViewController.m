@@ -10,6 +10,7 @@
 //Need to import the class (custome object, tableviewCell, nextVC, etc..) before using
 #import "AppleProduct.h"
 #import "DetailsViewController.h"
+#import "ProdcutTableViewCell.h"
 
 //Protocol Confirmation Goes Here , in the <Protocol>
 //Delegate 1.
@@ -99,13 +100,21 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     //declare var
+    /*
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"emptyCell"];
-
     AppleProduct *displayedProduct = self.products[indexPath.row];
 
     cell.textLabel.text = displayedProduct.name;
     cell.detailTextLabel.text = displayedProduct.date;
     cell.imageView.image = displayedProduct.image;
+     */
+
+    ProdcutTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"productCell"];
+    AppleProduct *displayedProduct = self.products[indexPath.row];
+
+    cell.name.text = displayedProduct.name;
+    cell.date.text = displayedProduct.date;
+    cell.image.image = displayedProduct.image;
 
     return cell;
 }
