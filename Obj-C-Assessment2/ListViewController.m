@@ -9,6 +9,7 @@
 #import "ListViewController.h"
 //Need to import the class (custome object, tableviewCell, nextVC, etc..) before using
 #import "AppleProduct.h"
+#import "DetailsViewController.h"
 
 //Protocol Confirmation Goes Here , in the <Protocol>
 @interface ListViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -101,6 +102,14 @@
     cell.imageView.image = displayedProduct.image;
 
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    DetailsViewController *targetVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailsViewController"];
+    //Bool in Obj-C is YES / NO
+    [self.navigationController pushViewController:targetVC animated:YES];
 }
 
 @end
