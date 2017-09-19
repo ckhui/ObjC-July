@@ -12,7 +12,8 @@
 #import "DetailsViewController.h"
 
 //Protocol Confirmation Goes Here , in the <Protocol>
-@interface ListViewController () <UITableViewDataSource, UITableViewDelegate>
+//Delegate 1.
+@interface ListViewController () <UITableViewDataSource, UITableViewDelegate, DetailViewControllerDelegate>
 
 //Declare all the property inside the `inteface`
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -116,8 +117,15 @@
 
     //pass data
     targetVC.displayProduct = self.products[indexPath.row];
+    //Delegate 2.
+    targetVC.delegate = self;
     //Bool in Obj-C is YES / NO
     [self.navigationController pushViewController:targetVC animated:YES];
 }
 
+//Delegate 3.
+#pragma mark - Custome Delegate 
+- (void)changeTitle:(NSString *)title {
+    self.title = title;
+}
 @end
