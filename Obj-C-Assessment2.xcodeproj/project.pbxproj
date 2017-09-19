@@ -15,6 +15,7 @@
 		5F7A56FE1F71A59C00AB8D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7A56FC1F71A59C00AB8D79 /* LaunchScreen.storyboard */; };
 		5F7A57071F71B43700AB8D79 /* AppleProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A57061F71B43700AB8D79 /* AppleProduct.m */; };
 		5F7A570A1F71B90300AB8D79 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A57091F71B90300AB8D79 /* DetailsViewController.m */; };
+		5F7A570D1F71C08E00AB8D79 /* ProdcutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7A570C1F71C08E00AB8D79 /* ProdcutTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		5F7A57061F71B43700AB8D79 /* AppleProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleProduct.m; sourceTree = "<group>"; };
 		5F7A57081F71B90300AB8D79 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		5F7A57091F71B90300AB8D79 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		5F7A570B1F71C08E00AB8D79 /* ProdcutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdcutTableViewCell.h; sourceTree = "<group>"; };
+		5F7A570C1F71C08E00AB8D79 /* ProdcutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdcutTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				5F7A57091F71B90300AB8D79 /* DetailsViewController.m */,
 				5F7A57051F71B43700AB8D79 /* AppleProduct.h */,
 				5F7A57061F71B43700AB8D79 /* AppleProduct.m */,
+				5F7A570B1F71C08E00AB8D79 /* ProdcutTableViewCell.h */,
+				5F7A570C1F71C08E00AB8D79 /* ProdcutTableViewCell.m */,
 				5F7A56F71F71A59C00AB8D79 /* Main.storyboard */,
 				5F7A56FA1F71A59C00AB8D79 /* Assets.xcassets */,
 				5F7A56FC1F71A59C00AB8D79 /* LaunchScreen.storyboard */,
@@ -162,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F7A57071F71B43700AB8D79 /* AppleProduct.m in Sources */,
+				5F7A570D1F71C08E00AB8D79 /* ProdcutTableViewCell.m in Sources */,
 				5F7A570A1F71B90300AB8D79 /* DetailsViewController.m in Sources */,
 				5F7A56F61F71A59C00AB8D79 /* ListViewController.m in Sources */,
 				5F7A56F31F71A59C00AB8D79 /* AppDelegate.m in Sources */,
