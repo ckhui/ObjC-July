@@ -41,7 +41,7 @@
 
 - (IBAction)changeTitleButtonTapped:(id)sender {
     //change the title in 1st VC
-
+    [self.delegate changeTitle:self.displayProduct.name];
 }
 
 #pragma mark - Edit action
