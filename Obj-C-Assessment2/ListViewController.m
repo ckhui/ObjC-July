@@ -51,6 +51,11 @@
 
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
 - (void) populateAppleProduct {
     AppleProduct *product1 = [[AppleProduct alloc]initWithName:@"Apple I" Date:@"1976 July 1" Url:@"https://en.wikipedia.org/wiki/Apple_I" Image:[UIImage imageNamed:@"Apple_I"]];
 
@@ -108,6 +113,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
     DetailsViewController *targetVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailsViewController"];
+
+    //pass data
+    targetVC.displayProduct = self.products[indexPath.row];
     //Bool in Obj-C is YES / NO
     [self.navigationController pushViewController:targetVC animated:YES];
 }

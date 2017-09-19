@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppleProduct.h"
 
 @interface DetailsViewController : UIViewController
+//public var
+@property (strong, nonatomic) AppleProduct *displayProduct;
 
 @end

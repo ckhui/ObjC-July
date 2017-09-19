@@ -156,6 +156,9 @@
                                     <constraint firstAttribute="height" constant="30" id="akz-E3-MBR"/>
                                 </constraints>
                                 <state key="normal" title="Change Title Label"/>
+                                <connections>
+                                    <action selector="changeTitleButtonTapped:" destination="E5T-Gl-1ze" eventType="touchUpInside" id="3U7-j9-Ty9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9b-Nw-XuX">
                                 <rect key="frame" x="146" y="513" width="83" height="30"/>
@@ -163,6 +166,9 @@
                                     <constraint firstAttribute="height" constant="30" id="6Nk-zA-FFr"/>
                                 </constraints>
                                 <state key="normal" title="View In Wiki"/>
+                                <connections>
+                                    <action selector="wikiButtonTapped:" destination="E5T-Gl-1ze" eventType="touchUpInside" id="ZoB-CU-3zn"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VDZ-lG-r06">
                                 <rect key="frame" x="46" y="184" width="283" height="299"/>
@@ -191,9 +197,19 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="Jfq-xR-Jkc">
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="d7M-s3-WkA"/>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="d7M-s3-WkA">
+                            <connections>
+                                <action selector="editButtonTapped:" destination="E5T-Gl-1ze" id="f7L-qv-QoC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="dateTextField" destination="cpf-9f-T06" id="rjs-Xu-JoB"/>
+                        <outlet property="editButton" destination="d7M-s3-WkA" id="hVu-B1-pgl"/>
+                        <outlet property="imageView" destination="VDZ-lG-r06" id="1iF-rn-6zv"/>
+                        <outlet property="nameTextField" destination="qcK-BR-Bj0" id="pvr-Gg-fde"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xb8-6a-mgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
